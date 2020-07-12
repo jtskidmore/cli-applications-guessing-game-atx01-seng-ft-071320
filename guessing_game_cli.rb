@@ -9,11 +9,11 @@ def run_guessing_game
   
   user_num = gets.chomp 
   
-  if user_num == com_num
+  if user_num.to_i == com_num
     puts "You guessed the correct number!"
   elsif user_num == "exit"
     puts "Goodbye!"
-  elsif user_num != com_num
+  elsif user_num.to_i != com_num
     puts "Sorry! The computer guessed #{com_num}."
   end
   
