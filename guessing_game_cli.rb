@@ -1,10 +1,12 @@
 # Code your solution here!
+require "pry"
+
 def run_guessing_game
   
   com_num = rand(6) + 1 
   puts "Guess a number between 1 and 6"
   user_num = gets.chomp 
-  
+  binding.pry
   if user_num == com_num
     puts "You guessed the correct number!"
   elsif user_num == "exit"
